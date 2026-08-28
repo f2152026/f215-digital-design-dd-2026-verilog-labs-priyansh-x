@@ -10,12 +10,13 @@
 module FA_Gate(
   input  a,
   input  b,
-  input  cin,
+  input  cin, 
   output sum,
   output cout
 );
   wire ps, pc1, pc2;
-
+ 
+ 
   xor (ps,  a,   b);
   and (pc1, a,   b);
   xor (sum, cin, ps);
